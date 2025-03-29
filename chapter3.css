@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+  }
+  
+  h1 {
+    margin-top: 20px;
+  }
+  
+  #gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;  /* Equal spacing between images */
+    margin: 20px auto;
+    max-width: 1000px;
+  }
+  
+  .photo {
+    text-align: center;
+  }
+  
+  .photo img {
+    filter: grayscale(30%) contrast(1.2);
+    transition: filter 0.3s ease;
+    border-radius: 4px;
+  }
+  
+  .photo img:hover {
+    filter: none;
+  }
+  
+  .photo p a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .photo p a:hover {
+    color: #000000;
+  }
+  
